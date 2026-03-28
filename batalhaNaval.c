@@ -35,7 +35,28 @@ int main() {
         {
             tabuleiro[linha2 + i][coluna2] = navio;
         }
-        
+
+    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
+    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
+    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
+    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
+    
+    //coordenadas navio 3 em diagonal. 
+    int linha3 = 2;
+    int coluna3 = 2;
+        for (int i = 0; i < tamanho; i++)
+        {
+            tabuleiro[linha3 + i][coluna3 + i] = navio;
+        }
+
+    // coordenadas navio 4 em diagonal oposta.
+    int linha4 = 5;
+    int coluna4 = 9;
+        for (int i = 0; i < tamanho; i++)
+        {
+            tabuleiro[linha4 + i][coluna4 - i] = navio;
+        }
+
         // impressão do tabuleiro com : a linha de caracter unico, a coluna númerada de 1 a 10, e os dois navios representados pelo valor 3 e ocupando 3 casas cada um.
         printf("### TABULEIRO DE BATALHA NAVAL ###\n");
         printf("  ");
